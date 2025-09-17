@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            transition: all 0.5s ease;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .header {
+            background-color: rgb(20, 26, 44);
+            color: rgb(200, 200, 200);
+            filter: drop-shadow(0 0 20px rgba(50, 50, 50, 0.4));
+        }
+
+        .sticky {
+            position: sticky;
+        }
+
+        .title {
+            font-size: 28px;
+            padding: 20px;
+        }
+
+        .content {
+            padding-bottom: 100px;
+        }
+
+        .main {
+            background: url("https://upload.wikimedia.org/wikipedia/id/7/7d/Bliss.png") center/cover no-repeat fixed;
+            background-blend-mode: multiply;
+            background-color: rgba(0,0,0,0.4);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .main-caption {
+            font-size: 48px;
+            width: 50%;
+            padding: 80px;
+        }
+        .footer {
+            height: 100px;
+            background-color: rgb(20, 26, 44);
+            color: rgb(200, 200, 200);
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .t-0 {
+            top: 0;
+        }
+
+        .b-0 {
+            bottom: 0;
+        }
+        .l-0 {
+            left: 0;
+        }
+        .r-0 {
+            right: 0;
+        }
+        .heading {
+            font-size: 20px;
+            padding: 10px;
+        }
+        .white {
+            color: white;
+        }
+        .highlights {
+            display: flex;
+            gap: 10px;
+            margin: 20px;
+            max-width: 1200px;
+            justify-content: space-evenly;
+        }
+
+        .highlights>div {
+            width: 100%;
+            border-radius: 20px;
+            padding: 40px;
+            background-color: rgb(20, 26, 44);
+        }
+
+        .highlight-content {
+            padding: 10px;
+        }
+        .w-full {
+            width: 100%;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+        .flex {
+            display: flex;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .highlights {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .highlights>div{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header sticky t-0">
+        <div class="title">Optima Apex Supply International Sourcing</div>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div class="main-caption">YOUR PARTNER IN TOMORROW'S SUPPLY CHAIN</div>
+        </div>
+        <div class="justify-center flex w-full">
+            <div class="highlights">
+                <div class="highlight-1">
+                    <div class="heading white">INNOVATIVE SOLUTIONS</div>
+                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa, ultrices eget sem at, congue pharetra velit.</div>
+                </div>
+                <div class="highlight-2">
+                    <div class="heading white">INNOVATIVE SOLUTIONS</div>
+                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa, ultrices eget sem at, congue pharetra velit.</div>
+                </div>
+                <div class="highlight-3">
+                    <div class="heading white">INNOVATIVE SOLUTIONS</div>
+                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa, ultrices eget sem at, congue pharetra velit.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer fixed b-0 l-0 r-0"></div>
+</body>
+</html>
