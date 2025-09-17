@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap min css -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugins/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        html, body {
+        html,
+        body {
             margin: 0;
             background-color: rgb(20, 26, 44);
             transition: all 0.5s ease;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+
         .header {
             background-color: rgba(0, 5, 24, 0.85);
             color: rgb(200, 200, 200);
@@ -35,9 +46,10 @@
         .main {
             background: url("https://upload.wikimedia.org/wikipedia/id/7/7d/Bliss.png") center/cover no-repeat fixed;
             background-blend-mode: multiply;
-            background-color: rgba(0,0,0,0.4);
+            background-color: rgba(0, 0, 0, 0.4);
             color: white;
             padding: 100px 0;
+            font-weight: bold;
         }
 
         .main-caption {
@@ -45,6 +57,7 @@
             width: 50%;
             padding: 80px;
         }
+
         .footer {
             height: 100px;
             background-color: rgb(20, 26, 44);
@@ -62,19 +75,24 @@
         .b-0 {
             bottom: 0;
         }
+
         .l-0 {
             left: 0;
         }
+
         .r-0 {
             right: 0;
         }
+
         .heading {
             font-size: 20px;
             padding: 10px;
         }
+
         .white {
             color: white;
         }
+
         .highlights {
             display: flex;
             gap: 10px;
@@ -93,6 +111,7 @@
         .highlight-content {
             padding: 10px;
         }
+
         .w-full {
             width: 100%;
         }
@@ -100,6 +119,7 @@
         .justify-center {
             justify-content: center;
         }
+
         .flex {
             display: flex;
         }
@@ -110,37 +130,90 @@
                 flex-direction: column;
                 gap: 10px;
             }
-            .highlights>div{
+
+            .highlights>div {
                 width: auto;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="header sticky t-0">
         <div class="title">Optima Apex Supply International Sourcing</div>
     </div>
     <div class="content">
         <div class="main">
-            <div class="main-caption">YOUR PARTNER IN TOMORROW'S SUPPLY CHAIN</div>
+            <div class="main-caption white">
+                <div>YOUR PARTNER</div>
+                <div>IN
+                    <span class="header-caption">
+                        <span class="cd-headline clip is-full-width">
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible theme-gradient">YESTERDAY</b>
+                                <b class="is-hidden theme-gradient">NOW</b>
+                                <b class="is-hidden theme-gradient">TOMORROW</b>
+                                <b class="is-hidden theme-gradient">LATER</b>
+                            </span>
+                        </span>
+                    </span>
+                    'S
+                </div>
+                <div>SUPPLY CHAIN</div>
+            </div>
+
         </div>
         <div class="justify-center flex w-full">
             <div class="highlights">
                 <div class="highlight-1">
                     <div class="heading white">INNOVATIVE SOLUTIONS</div>
-                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa, ultrices eget sem at, congue pharetra velit.</div>
+                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa,
+                        ultrices eget sem at, congue pharetra velit.</div>
                 </div>
                 <div class="highlight-2">
                     <div class="heading white">INNOVATIVE SOLUTIONS</div>
-                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa, ultrices eget sem at, congue pharetra velit.</div>
+                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa,
+                        ultrices eget sem at, congue pharetra velit.</div>
                 </div>
                 <div class="highlight-3">
                     <div class="heading white">INNOVATIVE SOLUTIONS</div>
-                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa, ultrices eget sem at, congue pharetra velit.</div>
+                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa,
+                        ultrices eget sem at, congue pharetra velit.</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer fixed b-0 l-0 r-0"></div>
+
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/waypoints.min.js"></script>
+
+    <script src="assets/js/plugins/odometer.js"></script>
+    <script src="assets/js/vendor/appear.js"></script>
+
+
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <script src="assets/js/plugins/swiper.js"></script>
+
+    <script src="assets/js/plugins/gsap.js"></script>
+    <script src="assets/js/plugins/splittext.js"></script>
+    <script src="assets/js/plugins/scrolltigger.js"></script>
+    <script src="assets/js/plugins/scrolltoplugins.js"></script>
+    <script src="assets/js/plugins/smoothscroll.js"></script>
+    <!-- bootstrap Js-->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/waw.js"></script>
+    <script src="assets/js/plugins/isotop.js"></script>
+    <script src="assets/js/plugins/animation.js"></script>
+    <script src="assets/js/plugins/contact.form.js"></script>
+    <script src="assets/js/vendor/backtop.js"></script>
+    <script src="assets/js/plugins/text-type.js"></script>
+    <!-- custom Js -->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
