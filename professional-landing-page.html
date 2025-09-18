@@ -17,9 +17,12 @@
         html,
         body {
             margin: 0;
-            background-color: rgb(20, 26, 44);
             transition: all 0.5s ease;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .bg-blue {
+            background: rgb(20, 26, 44) !important;
         }
 
         .header {
@@ -27,6 +30,7 @@
             color: rgb(200, 200, 200);
             filter: drop-shadow(0 0 20px rgba(50, 50, 50, 0.4));
             backdrop-filter: blur(20px);
+            z-index: 99;
         }
 
         .sticky {
@@ -54,7 +58,7 @@
 
         .main-caption {
             font-size: 48px;
-            width: 50%;
+            max-width: 600px;
             padding: 80px;
         }
 
@@ -124,7 +128,76 @@
             display: flex;
         }
 
+        .pt-5 {
+            padding-top: 5rem;
+        }
+
+        .wrapper {
+            overflow: hidden;
+            border-radius: 20px !important;
+            min-height: 350px;
+        }
+
+        #whatsapp-header {
+            background-color: rgba(41, 93, 86, 1);
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            color: white;
+            font-weight: bold;
+        }
+
+        .whatsapp-contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 20px 20px 20px 20px;
+            border-bottom: 1px solid lightgray;
+            background-color: #128C7E;
+            margin: 20px;
+            border-radius: 20px;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-contact>a:focus {
+            border: none;
+        }
+
+        .whatsapp-contact>a:focus-visible {
+            border: none;
+        }
+
+        .whatsapp-contact:hover {
+            background-color: #075f55;
+            color: white;
+        }
+
+        .whatsapp-photo {
+            background-color: #128C7E;
+            border-radius: 200px;
+            padding: 10px;
+            margin: 10px 10px 10px 20px;
+        }
+
+        .whatsapp-contact-name {
+            font-size: larger;
+        }
+
+        .ready-chatting-option>label {
+            background: rgb(101, 208, 114) !important;
+        }
+
+        /* mobile screen */
         @media only screen and (max-width: 800px) {
+            .main-caption {
+                width: 100%;
+                max-width: unset;
+                padding: 40px;
+                font-size: 24px;
+            }
+
             .highlights {
                 display: flex;
                 flex-direction: column;
@@ -138,7 +211,8 @@
     </style>
 </head>
 
-<body>
+<body class="spybody color-blue tmp-white-version bg-blue" data-spy="scroll" data-bs-target=".navbar-example2"
+    data-offset="150">
     <div class="header sticky t-0">
         <div class="title">Optima Apex Supply International Sourcing</div>
     </div>
@@ -163,30 +237,175 @@
             </div>
 
         </div>
-        <div class="justify-center flex w-full">
-            <div class="highlights">
-                <div class="highlight-1">
-                    <div class="heading white">INNOVATIVE SOLUTIONS</div>
-                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa,
-                        ultrices eget sem at, congue pharetra velit.</div>
+        <div class="tmp-service-area tmp-section-gapBottom pt-5" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-head mb--50">
+                            <div
+                                class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="subtitle">Lorem ipsum</span>
+                            </div>
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Lorem ipsum
+                            </h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="highlight-2">
-                    <div class="heading white">INNOVATIVE SOLUTIONS</div>
-                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa,
-                        ultrices eget sem at, congue pharetra velit.</div>
-                </div>
-                <div class="highlight-3">
-                    <div class="heading white">INNOVATIVE SOLUTIONS</div>
-                    <div class="highlight-content white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        ac imperdiet nibh, eu sagittis mauris. Praesent aliquam ultrices elit eu ornare. Nunc sem massa,
-                        ultrices eget sem at, congue pharetra velit.</div>
+                <div class="about-us-section-card row g-5">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="about-us-card tmp-scroll-trigger tmponhover tmp-fade-in animation-order-4"
+                            style="--x: 153px; --y: 11px;">
+                            <div class="card-head">
+                                <div class="logo-img">
+                                    <i class="fa-regular fa-code"></i>
+                                </div>
+                                <h3 class="card-title">Lorem ipsum</h3>
+                            </div>
+                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
+                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
+                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
+                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
+                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
+                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
+                                faucibus volutpat justo eget placerat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="about-us-card tmp-scroll-trigger tmponhover tmp-fade-in animation-order-5"
+                            style="--x: 193px; --y: 152px;">
+                            <div class="card-head">
+                                <div class="logo-img">
+                                    <i class="fa-light fa-palette"></i>
+                                </div>
+                                <h3 class="card-title">Lorem ipsum</h3>
+                            </div>
+                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
+                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
+                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
+                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
+                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
+                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
+                                faucibus volutpat justo eget placerat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="about-us-card tmp-scroll-trigger tmponhover tmp-fade-in animation-order-4"
+                            style="--x: 339px; --y: -1px;">
+                            <div class="card-head">
+                                <div class="logo-img">
+                                    <i class="fa-light fa-print"></i>
+                                </div>
+                                <h3 class="card-title">Lorem ipsum</h3>
+                            </div>
+                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
+                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
+                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
+                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
+                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
+                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
+                                faucibus volutpat justo eget placerat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="about-us-card tmp-scroll-trigger tmponhover tmp-fade-in animation-order-5"
+                            style="--x: 15px; --y: 61px;">
+                            <div class="card-head">
+                                <div class="logo-img">
+                                    <i class="fa-regular fa-handshake"></i>
+                                </div>
+                                <h3 class="card-title">Lorem ipsum</h3>
+                            </div>
+                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
+                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
+                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
+                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
+                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
+                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
+                                faucibus volutpat justo eget placerat.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+                <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Lorem<span><img
+                            src="assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
+                <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
+                    <p class="ex-subtitle">lorem</p>
+                    <h2 class="ex-name">lorem</h2>
+                    <h3 class="ex-title">lorem</h3>
+                    <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus faucibus volutpat justo eget placerat.</p>
+                </div>
+                <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
+                    <p class="ex-subtitle">Lorem</p>
+                    <h2 class="ex-name">lorem</h2>
+                    <h3 class="ex-title">lorem</h3>
+                    <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus faucibus volutpat justo eget placerat.</p>
+                </div>
+        </div>
     </div>
+
+
+
+
+
     <div class="footer fixed b-0 l-0 r-0"></div>
+
+
+    <div class="ready-chatting-option tmp-ready-chat">
+        <input type="checkbox" id="click">
+        <label for="click">
+            <i class="fab fa-whatsapp"></i>
+            <i class="fas fa-times"></i>
+        </label>
+        <div class="wrapper">
+            <div id="whatsapp-header">Lorem ipsum</div>
+            <a class="whatsapp-contact"
+                href="https://wa.me/6281211177728?text=Halo%20kak%2C%20aku%20ingin%20melakukan%20pemesanan.%20Apakah%20aku%20boleh%20lihat%20katalognya%3F">
+                <div class="whatsapp-contact-name">Lorem ipsum dolor sit</div>
+            </a>
+            <a class="whatsapp-contact"
+                href="https://wa.me/6281211177728?text=Halo%2C%20aku%20membutuhkan%20bantuan%20customer%20service.">
+                <div class="whatsapp-contact-name">Lorem ipsum dolor sit</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="scrollToTop" style="display: block;">
+        <div class="arrowUp">
+            <i class="fa-light fa-arrow-up"></i>
+        </div>
+        <div class="water" style="transform: translate(0px, 87%);">
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                <use xlink:href="#wave"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 560 20" style="display: none;">
+                <symbol id="wave">
+                    <path
+                        d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"
+                        fill="#"></path>
+                    <path
+                        d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"
+                        fill="#"></path>
+                    <path
+                        d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"
+                        fill="#"></path>
+                    <path
+                        d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"
+                        fill="#"></path>
+                </symbol>
+            </svg>
+
+        </div>
+    </div>
 
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/jquery-ui.min.js"></script>
