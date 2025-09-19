@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Optima Apex Supply International Sourcing</title>
     <!-- Bootstrap min css -->
     <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.css">
@@ -14,6 +14,10 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        body.color-blue {
+            --color-primary: rgba(80, 154, 208, 1);
+        }
+
         html,
         body {
             margin: 0;
@@ -26,18 +30,25 @@
         }
 
         .header {
-            background-color: rgba(0, 5, 24, 0.85);
+            background-color: rgba(24, 29, 50, 0.9);
             color: rgb(200, 200, 200);
             filter: drop-shadow(0 0 20px rgba(50, 50, 50, 0.4));
             backdrop-filter: blur(20px);
             z-index: 99;
+            display: flex;
+            padding: 0 20px;
         }
 
         .sticky {
             position: sticky;
         }
 
-        .title {
+        .logo {
+            width: 80px;
+            object-fit: contain;
+        }
+
+        .company-name {
             font-size: 28px;
             padding: 20px;
         }
@@ -58,7 +69,7 @@
 
         .main-caption {
             font-size: 48px;
-            max-width: 600px;
+            max-width: 800px;
             padding: 80px;
         }
 
@@ -67,6 +78,10 @@
             background-color: rgb(20, 26, 44);
             color: rgb(200, 200, 200);
             z-index: 1;
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .fixed {
@@ -113,6 +128,10 @@
             background-color: rgb(20, 26, 44);
         }
 
+        .text-blue {
+            color: rgb(101, 184, 244);
+        }
+
         .highlight-content {
             padding: 10px;
         }
@@ -136,7 +155,7 @@
         .wrapper {
             overflow: hidden;
             border-radius: 20px !important;
-            min-height: 350px;
+            min-height: 250px;
         }
 
         #whatsapp-header {
@@ -183,7 +202,7 @@
         }
 
         .whatsapp-contact-name {
-            font-size: larger;
+            font-size: large;
         }
 
         .ready-chatting-option>label {
@@ -203,6 +222,16 @@
             margin: 0;
             padding: 30px;
             gap: 20px;
+        }
+
+        .our-supported-company-area>.container>.row>div {
+            width: 33%;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .our-supported-company-area>.container>.row>div>div>img {
+                padding: 50px;
+            }
         }
 
         /* mobile screen */
@@ -230,28 +259,29 @@
 <body class="spybody color-blue tmp-white-version bg-blue" data-spy="scroll" data-bs-target=".navbar-example2"
     data-offset="150">
     <div class="header sticky t-0">
-        <div class="title">Optima Apex Supply International Sourcing</div>
+        <img src="./custom/logo.png" class="logo" alt="" srcset="">
+        <div class="company-name">OASIS</div>
     </div>
     <div class="content">
         <div class="main">
             <div class="main-caption white">
-                <div>YOUR PARTNER</div>
-                <div>IN
+                <div>KAMI ADALAH</div>
+                <div>SATU
                     <span class="header-caption">
                         <span class="cd-headline clip is-full-width">
                             <span class="cd-words-wrapper">
-                                <b class="is-visible theme-gradient">YESTERDAY</b>
-                                <b class="is-hidden theme-gradient">NOW</b>
-                                <b class="is-hidden theme-gradient">TOMORROW</b>
-                                <b class="is-hidden theme-gradient">LATER</b>
+                                <b class="is-visible theme-gradient text-blue">MITRA</b>
+                                <b class="is-hidden theme-gradient text-blue">JAWABAN</b>
+                                <b class="is-hidden theme-gradient text-blue">TEMPAT</b>
+                                <b class="is-hidden theme-gradient text-blue">TUJUAN</b>
+                                <b class="is-hidden theme-gradient text-blue">PARTNER</b>
+                                <b class="is-hidden theme-gradient text-blue">SOLUSI</b>
                             </span>
                         </span>
                     </span>
-                    'S
                 </div>
-                <div>SUPPLY CHAIN</div>
+                <div>UNTUK SEGALA KEBUTUHAN ANDA</div>
             </div>
-
         </div>
         <section class="about-us-area tmp-section-gapTop" id="about">
             <div class="container">
@@ -259,17 +289,17 @@
                     <div class="col-lg-6">
                         <div class="about-us-left-content-wrap bg-vactor-one">
                             <div class="years-of-experience-card tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                <h2 class="counter card-title"><span class="odometer" data-count="10">00</span>+
+                                <h2 class="counter card-title"><span class="odometer" data-count="50">00</span>+
                                 </h2>
-                                <p class="card-para">years of experience</p>
+                                <p class="card-para">Pelanggan Percaya</p>
                             </div>
                             <div class="design-card tmp-scroll-trigger tmp-fade-in animation-order-2">
                                 <div class="design-card-img">
-                                    <div class="icon"><i class="fa-sharp fa-thin fa-lock"></i></div>
+                                    <div class="icon"><i class="fa-sharp fa-thin fa-box"></i></div>
                                 </div>
                                 <div class="card-info">
-                                    <h3 class="card-title">Ui/Ux Design</h3>
-                                    <p class="card-para">241 Projects</p>
+                                    <h3 class="card-title">Produk Tersediakan</h3>
+                                    <p class="card-para">3.585.788 Unit</p>
                                 </div>
                             </div>
                         </div>
@@ -278,10 +308,10 @@
                         <div class="about-us-right-content-wrap">
                             <div class="section-head text-align-left mb--50">
                                 <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <span class="subtitle">About Me</span>
+                                    <span class="subtitle">Tentang Kami</span>
                                 </div>
-                                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Boost
-                                    Business Strategic <br> Solutions with Us</h2>
+                                <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                    Kembangkan Solusi Strategis Bersama Kami</h2>
                                 <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Business
                                     consulting
                                     consultants provide expert advice and guida
@@ -297,10 +327,10 @@
                                             <div class="logo-img">
                                                 <img src="assets/images/about/logo-1.svg" alt="logo">
                                             </div>
-                                            <h3 class="card-title">Business Solutions</h3>
+                                            <h3 class="card-title">Solusi Kebutuhan</h3>
                                         </div>
-                                        <p class="card-para">Each one showcases my approach and dedication to detail,
-                                            creativity
+                                        <p class="card-para">Penyedia ratusan jenis kategori produk untuk segala unit
+                                            lembaga dan usaha bisnis
                                         </p>
                                     </div>
                                 </div>
@@ -312,10 +342,9 @@
                                             <div class="logo-img">
                                                 <img src="assets/images/about/logo-2.svg" alt="logo">
                                             </div>
-                                            <h3 class="card-title">Profit Partners</h3>
+                                            <h3 class="card-title">Mitra Keuntungan</h3>
                                         </div>
-                                        <p class="card-para">Business consulting consul us to a provide expert advice
-                                            businesses
+                                        <p class="card-para">Produk tersedia dengan kualitas dan pelayanan prima
                                         </p>
                                     </div>
                                 </div>
@@ -324,7 +353,7 @@
                             <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
                                 <a class="tmp-btn hover-icon-reverse radius-round" href="about.html">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Read More About Me</span>
+                                        <span class="btn-text">Cari tahu lebih lanjut</span>
                                         <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                         <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                     </span>
@@ -342,9 +371,9 @@
                         <div class="section-head mb--50">
                             <div
                                 class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                <span class="subtitle">Lorem ipsum</span>
+                                <span class="subtitle">Pengalaman</span>
                             </div>
-                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Lorem ipsum
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Cerita Kami
                             </h2>
                         </div>
                     </div>
@@ -357,7 +386,7 @@
                                 <div class="logo-img">
                                     <i class="fa-regular fa-code"></i>
                                 </div>
-                                <h3 class="card-title">Lorem ipsum</h3>
+                                <h3 class="card-title">Produk Kesehatan</h3>
                             </div>
                             <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
                                 nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
@@ -376,7 +405,7 @@
                                 <div class="logo-img">
                                     <i class="fa-light fa-palette"></i>
                                 </div>
-                                <h3 class="card-title">Lorem ipsum</h3>
+                                <h3 class="card-title">Makanan dan Minuman</h3>
                             </div>
                             <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
                                 nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
@@ -395,7 +424,7 @@
                                 <div class="logo-img">
                                     <i class="fa-light fa-print"></i>
                                 </div>
-                                <h3 class="card-title">Lorem ipsum</h3>
+                                <h3 class="card-title">Perangkat Komunikasi</h3>
                             </div>
                             <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
                                 nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
@@ -414,7 +443,7 @@
                                 <div class="logo-img">
                                     <i class="fa-regular fa-handshake"></i>
                                 </div>
-                                <h3 class="card-title">Lorem ipsum</h3>
+                                <h3 class="card-title">Bantuan Bencana Alam</h3>
                             </div>
                             <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
                                 nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
@@ -430,12 +459,12 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Company Profile<span><img
+            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Kisah Pendiri<span><img
                         src="assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <p class="ex-subtitle">lorem</p>
-                <h2 class="ex-name">lorem</h2>
-                <h3 class="ex-title">lorem</h3>
+                <p class="ex-subtitle">2025</p>
+                <h2 class="ex-name">Latar Belakang</h2>
+                <h3 class="ex-title">Pendiri Perusahaan</h3>
                 <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin
                     interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue
                     tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et maximus risus. Maecenas accumsan a
@@ -443,10 +472,11 @@
                     sodales justo in est aliquet, a tempus erat tempus. Fusce imperdiet finibus est, in sagittis metus
                     porttitor ac. Phasellus faucibus volutpat justo eget placerat.</p>
             </div>
+            <br>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                <p class="ex-subtitle">Lorem</p>
-                <h2 class="ex-name">lorem</h2>
-                <h3 class="ex-title">lorem</h3>
+                <p class="ex-subtitle">2025</p>
+                <h2 class="ex-name">Kepuasan Pelanggan</h2>
+                <h3 class="ex-title">Cerita Mitra</h3>
                 <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin
                     interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue
                     tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et maximus risus. Maecenas accumsan a
@@ -458,272 +488,204 @@
 
         <section class="blog-and-news-are tmp-section-gap" id="blog">
             <div class="container">
-                <div class="section-head mb--60">
+                <div class="section-head">
                     <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                        <span class="subtitle">Blog and news</span>
+                        <span class="subtitle">Produk dan Jasa</span>
                     </div>
-                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Elevating Personal
-                        Branding the <br> through Powerful Portfolios</h2>
+                    <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Temukan Produk Anda
+                        Yang Tersedia</h2>
                 </div>
 
             </div>
+            <div class="row flex overflow-x-scroll no-wrap horizontal-scroll-container">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
+                        <div class="img-box">
+                            <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
+                            <ul class="blog-tags">
+                                <li>Preorder</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">Produk 1</h3>
+                            <div class="more-btn tmp-link-animation">
+                                <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
+                                        class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
+                        <div class="img-box">
+                            <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
+                            <ul class="blog-tags">
+                                <li>Preorder</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">Produk 2</h3>
+                            <div class="more-btn tmp-link-animation">
+                                <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
+                                        class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
+                        <div class="img-box">
+                            <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
+                            <ul class="blog-tags">
+                                <li>Preorder</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">Produk 3</h3>
+                            <div class="more-btn tmp-link-animation">
+                                <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
+                                        class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
+                        <div class="img-box">
+                            <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
+                            <ul class="blog-tags">
+                                <li>Preorder</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">Produk 4</h3>
+                            <div class="more-btn tmp-link-animation">
+                                <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
+                                        class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-5">
+                        <div class="img-box">
+                            <a href="blog-details.html">
+                                <img class="w-100" src="assets/images/blog/blog-img-2.jpg" alt="Blog Thumbnail">
+                            </a>
+                            <ul class="blog-tags">
+                                <li>Preorder</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">Produk 5</h3>
+                            <div class="more-btn tmp-link-animation">
+                                <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
+                                        class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div
+                        class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-6">
+                        <div class="img-box">
+                            <a href="blog-details.html">
+                                <img class="w-100" src="assets/images/blog/blog-img-3.jpg" alt="Blog Thumbnail">
+                            </a>
+                            <ul class="blog-tags">
+                                <li>Preorder</li>
+                            </ul>
+                        </div>
+                        <div class="blog-content-wrap">
+                            <h3 class="blog-title">Produk 6</h3>
+                            <div class="more-btn tmp-link-animation">
+                                <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
+                                        class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- test -->
-        <section class="testimonial tmp-section-gapTop">
-            <div class="testimonial-wrapper">
-                <div class="container">
-                    <div class="swiper testimonial-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div
-                                    class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="img-box">
-                                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                                        <ul class="blog-tags">
-                                            <li>Preorder</li>
-                                        </ul>
-                                    </div>
-                                    <div class="blog-content-wrap">
-                                        <h3 class="blog-title">Product 1</h3>
-                                        <div class="more-btn tmp-link-animation">
-                                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                                    class="read-more-icon"><i
-                                                        class="fa-solid fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="img-box">
-                                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                                        <ul class="blog-tags">
-                                            <li>Preorder</li>
-                                        </ul>
-                                    </div>
-                                    <div class="blog-content-wrap">
-                                        <h3 class="blog-title">Product 1</h3>
-                                        <div class="more-btn tmp-link-animation">
-                                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                                    class="read-more-icon"><i
-                                                        class="fa-solid fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div
-                                    class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <div class="img-box">
-                                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                                        <ul class="blog-tags">
-                                            <li>Preorder</li>
-                                        </ul>
-                                    </div>
-                                    <div class="blog-content-wrap">
-                                        <h3 class="blog-title">Product 1</h3>
-                                        <div class="more-btn tmp-link-animation">
-                                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                                    class="read-more-icon"><i
-                                                        class="fa-solid fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-                    <div class="testimonial-btn-next-prev">
-                        <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
-                        <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- test -->
-        <div class="row flex overflow-x-scroll no-wrap horizontal-scroll-container">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-1">
-                    <div class="img-box">
-                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                        <ul class="blog-tags">
-                            <li>Preorder</li>
-                        </ul>
-                    </div>
-                    <div class="blog-content-wrap">
-                        <h3 class="blog-title">Product 1</h3>
-                        <div class="more-btn tmp-link-animation">
-                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                    class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-2">
-                    <div class="img-box">
-                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                        <ul class="blog-tags">
-                            <li>Preorder</li>
-                        </ul>
-                    </div>
-                    <div class="blog-content-wrap">
-                        <h3 class="blog-title">Product 1</h3>
-                        <div class="more-btn tmp-link-animation">
-                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                    class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-3">
-                    <div class="img-box">
-                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                        <ul class="blog-tags">
-                            <li>Preorder</li>
-                        </ul>
-                    </div>
-                    <div class="blog-content-wrap">
-                        <h3 class="blog-title">Product 1</h3>
-                        <div class="more-btn tmp-link-animation">
-                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                    class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-4">
-                    <div class="img-box">
-                        <img class="w-100" src="assets/images/blog/blog-img-1.jpg" alt="Blog Thumbnail">
-                        <ul class="blog-tags">
-                            <li>Preorder</li>
-                        </ul>
-                    </div>
-                    <div class="blog-content-wrap">
-                        <h3 class="blog-title">Product 1</h3>
-                        <div class="more-btn tmp-link-animation">
-                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                    class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-5">
-                    <div class="img-box">
-                        <a href="blog-details.html">
-                            <img class="w-100" src="assets/images/blog/blog-img-2.jpg" alt="Blog Thumbnail">
-                        </a>
-                        <ul class="blog-tags">
-                            <li>Preorder</li>
-                        </ul>
-                    </div>
-                    <div class="blog-content-wrap">
-                        <h3 class="blog-title"><a class="link" href="blog-details.html">Let’s bring your ideas to life!
-                                Contact me, and let’s</a></h3>
-                        <div class="more-btn tmp-link-animation">
-                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                    class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="blog-card tmp-hover-link image-box-hover tmp-scroll-trigger tmp-fade-in animation-order-6">
-                    <div class="img-box">
-                        <a href="blog-details.html">
-                            <img class="w-100" src="assets/images/blog/blog-img-3.jpg" alt="Blog Thumbnail">
-                        </a>
-                        <ul class="blog-tags">
-                            <li>Preorder</li>
-                        </ul>
-                    </div>
-                    <div class="blog-content-wrap">
-                        <h3 class="blog-title"><a class="link" href="blog-details.html">Each one showcases my approach
-                                and dedication man</a></h3>
-                        <div class="more-btn tmp-link-animation">
-                            <a href="blog-details.html" class="read-more-btn">Pesan Sekarang<span
-                                    class="read-more-icon"><i class="fa-solid fa-angle-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         <div class="section-title-brand-area  tmp-section-gapTop">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-head mb--50">
-                        <div class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                            <span class="subtitle">Brand I have Work With</span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-head mb--50">
+                            <div
+                                class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                <span class="subtitle">Brand I have Work With</span>
+                            </div>
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">You Can Find
+                                Me On
+                            </h2>
+                            <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3"> Business
+                                consulting
+                                consultants provide expert advice and guida
+                                businesses to help them improve their performance, efficiency, and organizational </p>
                         </div>
-                        <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">You Can Find Me On
-                        </h2>
-                        <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3"> Business consulting
-                            consultants provide expert advice and guida
-                            businesses to help them improve their performance, efficiency, and organizational </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section-title-for-header end -->
+
+        <div class="our-supported-company-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-1">
+                            <img src="custom/e-catalogue.png"
+                                alt="e-catalogue">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-2">
+                            <img src="custom/inaproc.png"
+                                alt="INAPROC">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-3">
+                            <img src="custom/lkpp.png"
+                                alt="LKPP">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-4">
+                            <img src="custom/lpse.png"
+                                alt="LPSE">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-5">
+                            <img src="custom/sikap.png"
+                                alt="SIKAP">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-6">
+                            <img src="custom/sirup.png"
+                                alt="SIRUP">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- section-title-for-header end -->
 
-    <div class="our-supported-company-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-1">
-                        <img src="assets/images/our-supported-company/company-logo-1.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-2">
-                        <img src="assets/images/our-supported-company/company-logo-2.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-3">
-                        <img src="assets/images/our-supported-company/company-logo-3.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-4">
-                        <img src="assets/images/our-supported-company/company-logo-4.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-5">
-                        <img src="assets/images/our-supported-company/company-logo-5.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-6">
-                        <img src="assets/images/our-supported-company/company-logo-6.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-7">
-                        <img src="assets/images/our-supported-company/company-logo-7.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                    <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-8">
-                        <img src="assets/images/our-supported-company/company-logo-8.svg" alt="Reeni - Personal Portfolio HTML Template">
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <div class="footer fixed b-0 l-0 r-0">
+         PT OPTIMA APEX SUPPLY INTERNATIONAL SOURCING &copy; Copyright 2025
     </div>
-    </div>
-
-
-    <div class="footer fixed b-0 l-0 r-0"></div>
 
 
     <div class="ready-chatting-option tmp-ready-chat">
@@ -733,14 +695,10 @@
             <i class="fas fa-times"></i>
         </label>
         <div class="wrapper">
-            <div id="whatsapp-header">Lorem ipsum</div>
+            <div id="whatsapp-header">Hubungi Kami</div>
             <a class="whatsapp-contact"
-                href="https://wa.me/6281211177728?text=Halo%20kak%2C%20aku%20ingin%20melakukan%20pemesanan.%20Apakah%20aku%20boleh%20lihat%20katalognya%3F">
-                <div class="whatsapp-contact-name">Lorem ipsum dolor sit</div>
-            </a>
-            <a class="whatsapp-contact"
-                href="https://wa.me/6281211177728?text=Halo%2C%20aku%20membutuhkan%20bantuan%20customer%20service.">
-                <div class="whatsapp-contact-name">Lorem ipsum dolor sit</div>
+                href="https://wa.me/628131221045?text=Halo%20kak%2C%20aku%20ingin%20melakukan%20pemesanan.%20Apakah%20aku%20boleh%20lihat%20katalognya%3F">
+                <div class="whatsapp-contact-name">Ricky (Admin) +62-813-1221-045</div>
             </a>
         </div>
     </div>
