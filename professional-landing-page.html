@@ -18,6 +18,30 @@
             --color-primary: rgba(80, 154, 208, 1);
         }
 
+        .tmp-section-gapBottom{
+            padding: 80px 0 0 0;
+        }
+
+        body.tmp-white-version {
+            --color-heading: white;
+            --color-gray: white;
+            --color-gray-2: rgb(6, 19, 48);
+            --color-body: white;
+            --color-border: rgb(99, 152, 203);
+        }
+
+        .tmp-section-gapTop {
+            padding-top: 80px;
+        }
+
+        .tmp-section-gap {
+            padding: 80px 0 0 0;
+        }
+
+        .ex-subtitle {
+            color: var(--color-primary)
+        }
+
         html,
         body {
             margin: 0;
@@ -51,26 +75,32 @@
         .company-name {
             font-size: 28px;
             padding: 20px;
+            font-weight: bold;
+            font-family: var(--font-secondary);
+            color: white;
         }
 
         .content {
             padding-bottom: 100px;
-            background-color: white;
+            background-color: rgb(2, 9, 24);
         }
 
         .main {
-            background: url("https://upload.wikimedia.org/wikipedia/id/7/7d/Bliss.png") center/cover no-repeat fixed;
-            background-blend-mode: multiply;
-            background-color: rgba(0, 0, 0, 0.4);
+            background: url("./custom/wallpaper.jpg") center/cover no-repeat fixed;
+            /* background-blend-mode: multiply; */
+            /* background-color: rgba(0, 0, 0, 0.4); */
             color: white;
-            padding: 100px 0;
+            align-content: center;
+            height: 86vh;
             font-weight: bold;
         }
 
         .main-caption {
-            font-size: 48px;
-            max-width: 800px;
+            font-size: 70px;
+            max-width: 1000px;
             padding: 80px;
+            line-height: 1.2em;
+            font-family: var(--font-secondary);
         }
 
         .footer {
@@ -224,6 +254,9 @@
             gap: 20px;
         }
 
+        .our-supported-company-area>.container>.row {
+            border: none;
+        }
         .our-supported-company-area>.container>.row>div {
             width: 33%;
         }
@@ -260,7 +293,7 @@
     data-offset="150">
     <div class="header sticky t-0">
         <img src="./custom/logo.png" class="logo" alt="" srcset="">
-        <div class="company-name">OASIS</div>
+        <div class="company-name">PT OASIS</div>
     </div>
     <div class="content">
         <div class="main">
@@ -308,7 +341,7 @@
                         <div class="about-us-right-content-wrap">
                             <div class="section-head text-align-left mb--50">
                                 <div class="section-sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <span class="subtitle">Tentang Kami</span>
+                                    <span class="subtitle">About Us</span>
                                 </div>
                                 <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                                     Kembangkan Solusi Strategis Bersama Kami</h2>
@@ -371,9 +404,10 @@
                         <div class="section-head mb--50">
                             <div
                                 class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                <span class="subtitle">Pengalaman</span>
+                                <span class="subtitle">Experience</span>
                             </div>
-                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Cerita Kami
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Pengalaman
+                                Kami
                             </h2>
                         </div>
                     </div>
@@ -384,7 +418,7 @@
                             style="--x: 153px; --y: 11px;">
                             <div class="card-head">
                                 <div class="logo-img">
-                                    <i class="fa-regular fa-code"></i>
+                                    <i class="fa-regular fa-stethoscope"></i>
                                 </div>
                                 <h3 class="card-title">Produk Kesehatan</h3>
                             </div>
@@ -403,7 +437,7 @@
                             style="--x: 193px; --y: 152px;">
                             <div class="card-head">
                                 <div class="logo-img">
-                                    <i class="fa-light fa-palette"></i>
+                                    <i class="fa-light fa-utensils"></i>
                                 </div>
                                 <h3 class="card-title">Makanan dan Minuman</h3>
                             </div>
@@ -422,7 +456,7 @@
                             style="--x: 339px; --y: -1px;">
                             <div class="card-head">
                                 <div class="logo-img">
-                                    <i class="fa-light fa-print"></i>
+                                    <i class="fa-light fa-signal-stream"></i>
                                 </div>
                                 <h3 class="card-title">Perangkat Komunikasi</h3>
                             </div>
@@ -441,7 +475,7 @@
                             style="--x: 15px; --y: 61px;">
                             <div class="card-head">
                                 <div class="logo-img">
-                                    <i class="fa-regular fa-handshake"></i>
+                                    <i class="fa-regular fa-house-chimney-crack"></i>
                                 </div>
                                 <h3 class="card-title">Bantuan Bencana Alam</h3>
                             </div>
@@ -459,7 +493,7 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Kisah Pendiri<span><img
+            <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Company Profile<span><img
                         src="assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
                 <p class="ex-subtitle">2025</p>
@@ -474,8 +508,6 @@
             </div>
             <br>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                <p class="ex-subtitle">2025</p>
-                <h2 class="ex-name">Kepuasan Pelanggan</h2>
                 <h3 class="ex-title">Cerita Mitra</h3>
                 <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin
                     interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue
@@ -613,9 +645,7 @@
             </div>
         </section>
 
-
-
-        <div class="section-title-brand-area  tmp-section-gapTop">
+        <div class="section-title-brand-area tmp-section-gapTop">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -642,49 +672,135 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-1">
-                            <img src="custom/e-catalogue.png"
-                                alt="e-catalogue">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-1 bg-white">
+                            <img src="custom/e-catalogue.png" alt="e-catalogue">
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-2">
-                            <img src="custom/inaproc.png"
-                                alt="INAPROC">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-2 bg-white">
+                            <img src="custom/inaproc.png" alt="INAPROC">
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-3">
-                            <img src="custom/lkpp.png"
-                                alt="LKPP">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-3 bg-white">
+                            <img src="custom/lkpp.png" alt="LKPP">
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-4">
-                            <img src="custom/lpse.png"
-                                alt="LPSE">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-4 bg-white">
+                            <img src="custom/lpse.png" alt="LPSE">
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-5">
-                            <img src="custom/sikap.png"
-                                alt="SIKAP">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-5 bg-white">
+                            <img src="custom/sikap.png" alt="SIKAP">
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
-                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-6">
-                            <img src="custom/sirup.png"
-                                alt="SIRUP">
+                        <div class="support-company-logo tmp-scroll-trigger tmp-fade-in animation-order-6 bg-white">
+                            <img src="custom/sirup.png" alt="SIRUP">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="get-in-touch-area tmp-section-gapBottom" id="contacts">
+            <div class="container">
+                <div class="get-in-touch-wrapper tmponhover">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-5">
+                            <div class="contact-inner">
+                                <div
+                                    class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <span class="title-left">Get Ready To Create Great</span>
+                                </div>
+                                <ul class="ft-link v2">
+                                    <li class="tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-link-animation">
+                                        <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
+                                        <div class="ft-link-wrap">
+                                            <h4 class="link-title">E-mail:</h4>
+                                            <a href="#">nafiz125@gmail.com</a>
+                                        </div>
+                                    </li>
+                                    <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                        <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <div class="ft-link-wrap">
+                                            <h4 class="link-title">Location:</h4>
+                                            <div>3891 Ranchview Dr. Richardson</div>
+                                        </div>
+                                    </li>
+                                    <li class="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
+                                        <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <div class="ft-link-wrap">
+                                            <h4 class="link-title">Contact:</h4>
+                                            <a href="#">01245789321</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="contact-inner">
+                                <div
+                                    class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
+                                    <span class="title">GET IN TOUCH</span>
+                                </div>
+                                <div class="contact-form">
+                                    <div id="form-messages" class="error"></div>
+                                    <form class="tmp-dynamic-form" id="contact-form" onsubmit="submit">
+                                        <div class="contact-form-wrapper row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input class="input-field" name="name" id="contact-name"
+                                                        placeholder="Your Name" type="text" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input class="input-field" type="text" id="subject" name="subject"
+                                                        placeholder="Subject">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <textarea class="input-field" placeholder="Your Message"
+                                                        name="message" id="contact-message" required></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="tmp-button-here">
+                                                    <button class="tmp-btn hover-icon-reverse radius-round w-100"
+                                                        name="submit" type="submit" id="submit">
+                                                        <span class="icon-reverse-wrapper">
+                                                            <span class="btn-text">Appointment Now</span>
+                                                            <span class="btn-icon"><i
+                                                                    class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                            <span class="btn-icon"><i
+                                                                    class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 
     <div class="footer fixed b-0 l-0 r-0">
-         PT OPTIMA APEX SUPPLY INTERNATIONAL SOURCING &copy; Copyright 2025
+        PT OPTIMA APEX SUPPLY INTERNATIONAL SOURCING &copy; Copyright 2025
     </div>
 
 
@@ -761,6 +877,13 @@
     <script src="assets/js/plugins/text-type.js"></script>
     <!-- custom Js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function submit(e) {
+            e.preventDefault();
+            window.location.href = 'https://www.google.com'
+        }
+    </script>
 </body>
 
 </html>
