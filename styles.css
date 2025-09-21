@@ -1,0 +1,366 @@
+body.color-blue {
+    --color-primary: rgba(80, 154, 208, 1);
+}
+
+.tmp-section-gapBottom {
+    padding: 80px 0 0 0;
+}
+
+body.tmp-white-version {
+    --color-heading: white;
+    --color-gray: white;
+    --color-gray-2: rgb(6, 19, 48);
+    --color-body: white;
+    --color-border: rgb(99, 152, 203);
+}
+
+.tmp-mainmenu-nav {
+    flex: 1;
+}
+
+.navbar-example2 {
+    display: flex;
+    justify-content: center;
+}
+
+.tmp-section-gapTop {
+    padding-top: 80px;
+}
+
+.tmp-section-gap {
+    padding: 80px 0 0 0;
+}
+
+.ex-subtitle {
+    color: var(--color-primary)
+}
+
+html,
+body {
+    margin: 0;
+    transition: all 0.5s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bg-blue {
+    background: rgb(20, 26, 44) !important;
+}
+
+.header {
+    background-color: rgba(24, 29, 50, 0.9);
+    color: rgb(200, 200, 200);
+    filter: drop-shadow(0 0 20px rgba(50, 50, 50, 0.4));
+    backdrop-filter: blur(20px);
+    z-index: 99;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.company-logo {
+    width: 60px;
+    margin: 0 20px;
+    object-fit: contain;
+    opacity: 0;
+}
+.company-logo-menu {
+    width: 60px;
+    object-fit: contain;
+}
+
+.logo-area {
+    display: flex;
+}
+.company-name {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    color: white;
+}
+
+.content {
+    background-color: rgb(2, 9, 24);
+    min-height: 85vh;
+}
+
+.pb-10 {
+    padding-bottom: 10rem;
+}
+
+.main-bg {
+    background: url("./custom/wallpaper.jpg") center/cover no-repeat fixed;
+}
+
+.main {
+    color: white;
+    align-content: center;
+    height: 100vh;
+    font-weight: bold;
+}
+
+.main-caption {
+    font-size: 70px;
+    max-width: 1000px;
+    padding: 80px;
+    line-height: 1.2em;
+    font-family: var(--font-secondary);
+}
+
+.footer {
+    height: 50px;
+    background-color: rgb(20, 26, 44);
+    color: rgb(200, 200, 200);
+    z-index: 1;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.t-0 {
+    top: 0;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.l-0 {
+    left: 0;
+}
+
+.r-0 {
+    right: 0;
+}
+
+.heading {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.white {
+    color: white;
+}
+
+.map {
+    margin: 80px 0 0 0;
+    border-radius: 15px;
+}
+
+.highlights {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    max-width: 1200px;
+    justify-content: space-evenly;
+}
+
+.highlights>div {
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgb(20, 26, 44);
+}
+
+.text-blue {
+    color: rgb(101, 184, 244);
+}
+
+.highlight-content {
+    padding: 10px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.pt-5 {
+    padding-top: 5rem;
+}
+
+.wrapper {
+    overflow: hidden;
+    border-radius: 20px !important;
+    min-height: 250px;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+
+.get-in-touch-wrapper {
+    padding-bottom: 60px;
+    z-index: 0;
+}
+
+#whatsapp-header {
+    background-color: rgba(41, 93, 86, 1);
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+}
+
+.whatsapp-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid lightgray;
+    background-color: #128C7E;
+    margin: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-contact>a:focus {
+    border: none;
+}
+
+.whatsapp-contact>a:focus-visible {
+    border: none;
+}
+
+.whatsapp-contact:hover {
+    background-color: #075f55;
+    color: white;
+}
+
+.whatsapp-photo {
+    background-color: #128C7E;
+    border-radius: 200px;
+    padding: 10px;
+    margin: 10px 10px 10px 20px;
+}
+
+.whatsapp-contact-name {
+    font-size: large;
+}
+
+.ready-chatting-option>label {
+    background: rgb(101, 208, 114) !important;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.horizontal-scroll-container {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    gap: 20px;
+}
+
+.our-supported-company-area>.container>.row {
+    border: none;
+}
+
+.our-supported-company-area>.container>.row>div {
+    width: 33%;
+}
+
+.ex-para {
+    text-align: justify;
+}
+
+.card-para {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 1200px) {
+    .our-supported-company-area>.container>.row>div>div>img {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        display: flex;
+    }
+
+    .company-name {
+        flex: 1;
+    }
+}
+
+/* mobile screen */
+@media only screen and (max-width: 800px) {
+    .logo {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .company-name {
+        flex: 1;
+        text-align: center;
+    }
+
+    .main {
+        background: url("./custom/wallpaper.jpg") center/cover no-repeat;
+        background-position: 75% 0%;
+    }
+
+    .main-caption {
+        width: 100%;
+        max-width: unset;
+        padding: 0;
+        font-size: 24px;
+    }
+
+    .highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .highlights>div {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .get-in-touch-wrapper {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .get-in-touch-wrapper {
+        padding-bottom: 10px;
+    }
+}
