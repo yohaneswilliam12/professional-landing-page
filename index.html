@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optima Apex Supply International Sourcing</title>
+    <link rel="icon" type="image/x-icon" href="./custom/logo.png">
     <!-- Bootstrap min css -->
     <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.css">
@@ -18,7 +19,7 @@
             --color-primary: rgba(80, 154, 208, 1);
         }
 
-        .tmp-section-gapBottom{
+        .tmp-section-gapBottom {
             padding: 80px 0 0 0;
         }
 
@@ -60,7 +61,8 @@
             backdrop-filter: blur(20px);
             z-index: 99;
             display: flex;
-            padding: 0 20px;
+            padding: 5px 20px;
+            align-items: center;
         }
 
         .sticky {
@@ -68,13 +70,14 @@
         }
 
         .logo {
-            width: 80px;
+            width: 60px;
+            margin: 0 20px;
             object-fit: contain;
+            opacity: 0;
         }
 
         .company-name {
             font-size: 28px;
-            padding: 20px;
             font-weight: bold;
             font-family: var(--font-secondary);
             color: white;
@@ -93,6 +96,7 @@
             align-content: center;
             height: 86vh;
             font-weight: bold;
+            padding: 0 40px;
         }
 
         .main-caption {
@@ -143,6 +147,11 @@
             color: white;
         }
 
+        .map {
+            margin: 80px 0 0 0;
+            border-radius: 15px;
+        }
+
         .highlights {
             display: flex;
             gap: 10px;
@@ -186,6 +195,23 @@
             overflow: hidden;
             border-radius: 20px !important;
             min-height: 250px;
+        }
+
+        .mt-5 {
+            margin-top: 5rem;
+        }
+
+        .mt-10 {
+            margin-top: 10rem;
+        }
+
+        .mb-10 {
+            margin-bottom: 10rem;
+        }
+
+        .get-in-touch-wrapper {
+            padding-bottom: 60px;
+            z-index: 0;
         }
 
         #whatsapp-header {
@@ -257,8 +283,17 @@
         .our-supported-company-area>.container>.row {
             border: none;
         }
+
         .our-supported-company-area>.container>.row>div {
             width: 33%;
+        }
+
+        .ex-para {
+            text-align: justify;
+        }
+
+        .card-para {
+            text-align: justify;
         }
 
         @media only screen and (min-width: 1200px) {
@@ -286,6 +321,18 @@
                 width: auto;
             }
         }
+
+        @media only screen and (max-width: 800px) {
+            .get-in-touch-wrapper {
+                padding-bottom: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .get-in-touch-wrapper {
+                padding-bottom: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -293,7 +340,7 @@
     data-offset="150">
     <div class="header sticky t-0">
         <img src="./custom/logo.png" class="logo" alt="" srcset="">
-        <div class="company-name">PT OASIS</div>
+        <div class="company-name">OASIS</div>
     </div>
     <div class="content">
         <div class="main">
@@ -344,11 +391,10 @@
                                     <span class="subtitle">About Us</span>
                                 </div>
                                 <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
-                                    Kembangkan Solusi Strategis Bersama Kami</h2>
-                                <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Business
-                                    consulting
-                                    consultants provide expert advice and guida
-                                    businesses to help them improve their performance, efficiency, and organizational
+                                    Optima Apex Supply International Sourcing</h2>
+                                <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Perusahaan
+                                    jaringan bisnis yang bergerak dalam perdagangan dan jasa, dengan memaksimalkan
+                                    efisiensi dan solusi yang terbaik untuk usaha, bisnis, dan lembaga.
                                 </p>
                             </div>
                             <div class="about-us-section-card row g-5">
@@ -360,7 +406,7 @@
                                             <div class="logo-img">
                                                 <img src="assets/images/about/logo-1.svg" alt="logo">
                                             </div>
-                                            <h3 class="card-title">Solusi Kebutuhan</h3>
+                                            <h3 class="card-title">Visi</h3>
                                         </div>
                                         <p class="card-para">Penyedia ratusan jenis kategori produk untuk segala unit
                                             lembaga dan usaha bisnis
@@ -375,7 +421,7 @@
                                             <div class="logo-img">
                                                 <img src="assets/images/about/logo-2.svg" alt="logo">
                                             </div>
-                                            <h3 class="card-title">Mitra Keuntungan</h3>
+                                            <h3 class="card-title">Misi</h3>
                                         </div>
                                         <p class="card-para">Produk tersedia dengan kualitas dan pelayanan prima
                                         </p>
@@ -386,7 +432,7 @@
                             <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-6">
                                 <a class="tmp-btn hover-icon-reverse radius-round" href="about.html">
                                     <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Cari tahu lebih lanjut</span>
+                                        <label for="click" class="btn-text">Cari tahu lebih lanjut</label>
                                         <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                         <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                     </span>
@@ -397,7 +443,7 @@
                 </div>
             </div>
         </section>
-        <div class="tmp-service-area tmp-section-gapBottom pt-5" id="service">
+        <div class="tmp-service-area tmp-section-gapBottom pt-5 mt-5" id="service">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -422,13 +468,13 @@
                                 </div>
                                 <h3 class="card-title">Produk Kesehatan</h3>
                             </div>
-                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
-                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
-                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
-                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
-                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
-                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
-                                faucibus volutpat justo eget placerat.
+                            <p class="card-para">Kami merupakan salah satu pemasok besar alat kesehatan di Indonesia
+                                dengan fokus pada masker medis, APD, dan rapid test. Di tengah lonjakan kebutuhan dan
+                                keterbatasan pasokan, kami menjaga ketersediaan produk melalui kerja sama dengan
+                                produsen lokal maupun internasional. Dengan koordinasi intensif dan manajemen logistik
+                                yang adaptif, kami memastikan pasokan tiba tepat waktu ke rumah sakit, klinik, dan
+                                instansi terkait. Pengalaman ini menjadi kontribusi nyata kami dalam mendukung tenaga
+                                medis dan masyarakat menghadapi masa krisis.
                             </p>
                         </div>
                     </div>
@@ -441,13 +487,14 @@
                                 </div>
                                 <h3 class="card-title">Makanan dan Minuman</h3>
                             </div>
-                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
-                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
-                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
-                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
-                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
-                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
-                                faucibus volutpat justo eget placerat.
+                            <p class="card-para">Setiap acara memiliki kebutuhan unik, mulai dari jumlah tamu besar
+                                hingga menu khusus
+                                yang harus disajikan cepat. Untuk itu, kami membangun sistem distribusi terorganisir,
+                                bekerja sama dengan penyedia bahan baku terpercaya, dan menyiapkan tim logistik yang
+                                sigap. Kami juga menjaga konsistensi rasa, kesegaran produk, serta penyajian sesuai
+                                ekspektasi penyelenggara. Keberhasilan memastikan ketersediaan makanan dan minuman skala
+                                besar menjadi bagian penting dari suksesnya berbagai event, mulai konferensi bisnis
+                                hingga perayaan kenegaraan.
                             </p>
                         </div>
                     </div>
@@ -460,13 +507,13 @@
                                 </div>
                                 <h3 class="card-title">Perangkat Komunikasi</h3>
                             </div>
-                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
-                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
-                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
-                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
-                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
-                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
-                                faucibus volutpat justo eget placerat.
+                            <p class="card-para">Kami berpengalaman sebagai pemasok alat komunikasi dan jaringan untuk
+                                perusahaan maupun institusi militer dengan standar keamanan dan kualitas yang tinggi.
+                                Setiap proyek kami jalankan dengan perencanaan matang, pemilihan perangkat tepat, serta
+                                instalasi sistem yang andal tanpa celah. Peran kami bukan hanya sebagai penyedia barang,
+                                tetapi juga mitra strategis yang memastikan kelancaran operasional, baik dalam mendukung
+                                aktivitas bisnis maupun kesiapan militer di situasi kritis. Kepercayaan dan kemampuan
+                                memberikan solusi tepat waktu menjadi kunci keberhasilan kami dalam setiap kerja sama.
                             </p>
                         </div>
                     </div>
@@ -479,42 +526,44 @@
                                 </div>
                                 <h3 class="card-title">Bantuan Bencana Alam</h3>
                             </div>
-                            <p class="card-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum
-                                nibh. Proin interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at
-                                magna. Fusce augue tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et
-                                maximus risus. Maecenas accumsan a arcu sed iaculis. Aenean ligula nunc, posuere at
-                                dignissim quis, cursus aliquet felis. Phasellus sodales justo in est aliquet, a tempus
-                                erat tempus. Fusce imperdiet finibus est, in sagittis metus porttitor ac. Phasellus
-                                faucibus volutpat justo eget placerat.
+                            <p class="card-para">Dalam penanganan bencana alam, kami menyediakan bantuan berupa makanan
+                                siap saji, air bersih, obat-obatan, selimut, tenda darurat, dan perlengkapan medis
+                                dasar. Distribusi dilakukan melalui koordinasi dengan BNPB dan Kementerian Sosial
+                                sebagai lembaga pemerintah yang mengatur kebutuhan di lapangan. Dengan sistem logistik
+                                yang terorganisir, kami memastikan bantuan tiba cepat dan tepat sasaran. Upaya ini
+                                menjadi wujud kontribusi kami dalam meringankan beban masyarakat serta mendukung
+                                pemulihan pascabencana.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-10">
             <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Company Profile<span><img
                         src="assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
                 <p class="ex-subtitle">2025</p>
                 <h2 class="ex-name">Latar Belakang</h2>
-                <h3 class="ex-title">Pendiri Perusahaan</h3>
-                <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin
-                    interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue
-                    tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et maximus risus. Maecenas accumsan a
-                    arcu sed iaculis. Aenean ligula nunc, posuere at dignissim quis, cursus aliquet felis. Phasellus
-                    sodales justo in est aliquet, a tempus erat tempus. Fusce imperdiet finibus est, in sagittis metus
-                    porttitor ac. Phasellus faucibus volutpat justo eget placerat.</p>
+                <h3 class="ex-title">Founders</h3>
+                <p class="ex-para">PT OPTIMA APEX SUPPLY INTERNATIONAL SOURCING memahami tingginya kebutuhan berbagai
+                    sektor yang terdiversifikasi—akan pasokan barang yang andal, tepat waktu, dan berkualitas. Banyak
+                    instansi, baik bisnis maupun pemerintah, menghadapi tantangan dalam menjaga ketersediaan dan
+                    distribusi barang vital, sehingga dibutuhkan mitra yang dapat dipercaya. Dengan pengalaman lintas
+                    bidang dan jaringan kerja sama yang luas, kami hadir untuk memberikan solusi terpadu yang mendukung
+                    kelancaran operasional dan keberhasilan dengan strategis.
+                </p>
             </div>
             <br>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
-                <h3 class="ex-title">Cerita Mitra</h3>
-                <p class="ex-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ipsum nibh. Proin
-                    interdum pretium pretium. Nam vitae tellus in diam viverra imperdiet nec at magna. Fusce augue
-                    tortor, feugiat ac imperdiet porta, sodales vel mauris. Nullam et maximus risus. Maecenas accumsan a
-                    arcu sed iaculis. Aenean ligula nunc, posuere at dignissim quis, cursus aliquet felis. Phasellus
-                    sodales justo in est aliquet, a tempus erat tempus. Fusce imperdiet finibus est, in sagittis metus
-                    porttitor ac. Phasellus faucibus volutpat justo eget placerat.</p>
+                <h3 class="ex-title">Clients Feedback</h3>
+                <p class="ex-para">Kami menghadirkan kepuasan nyata bagi pelanggan melalui pelayanan yang konsisten,
+                    cepat, dan dapat diandalkan. Banyak mitra kami menyampaikan bahwa ketepatan waktu pengiriman,
+                    kualitas produk yang terjaga, serta kesiapan tim kami dalam merespons kebutuhan mendesak memberi
+                    rasa aman dan kepercayaan penuh. Testimoni yang sering kami terima menekankan profesionalisme,
+                    kemudahan koordinasi, serta kemampuan kami menyesuaikan solusi sesuai kondisi di lapangan. Kepuasan
+                    pelanggan inilah yang menjadi motivasi utama kami untuk terus berkembang dan memberikan kontribusi
+                    terbaik.</p>
             </div>
         </div>
 
@@ -652,15 +701,13 @@
                         <div class="section-head mb--50">
                             <div
                                 class="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                <span class="subtitle">Brand I have Work With</span>
+                                <span class="subtitle">Verifikasi</span>
                             </div>
-                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">You Can Find
-                                Me On
+                            <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">Lembaga
+                                Resmi
                             </h2>
-                            <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3"> Business
-                                consulting
-                                consultants provide expert advice and guida
-                                businesses to help them improve their performance, efficiency, and organizational </p>
+                            <p class="description section-sm tmp-scroll-trigger tmp-fade-in animation-order-3">PT Optima
+                                Apex Supply International Sourcing telah diverifikasi oleh</p>
                         </div>
                     </div>
                 </div>
@@ -711,30 +758,35 @@
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-5">
                             <div class="contact-inner">
-                                <div
-                                    class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <span class="title-left">Get Ready To Create Great</span>
-                                </div>
                                 <ul class="ft-link v2">
                                     <li class="tmp-scroll-trigger tmp-fade-in animation-order-1 tmp-link-animation">
                                         <span class="ft-icon"><i class="fa-solid fa-envelope"></i></span>
                                         <div class="ft-link-wrap">
                                             <h4 class="link-title">E-mail:</h4>
-                                            <a href="#">nafiz125@gmail.com</a>
+                                            <a href="#">oas.intersource@gmail.com</a>
                                         </div>
                                     </li>
                                     <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
                                         <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
                                         <div class="ft-link-wrap">
-                                            <h4 class="link-title">Location:</h4>
-                                            <div>3891 Ranchview Dr. Richardson</div>
+                                            <h4 class="link-title">Office:</h4>
+                                            <div>Epiwalk Lt. 6, No. 625, Blok A<br>Karet Kuningan, Setiabudi<br>DKI
+                                                Jakarta 12940</div>
+                                        </div>
+                                    </li>
+                                    <li class="tmp-scroll-trigger tmp-fade-in animation-order-2">
+                                        <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                        <div class="ft-link-wrap">
+                                            <h4 class="link-title">Warehouse:</h4>
+                                            <div>Jl. Kw. Industri Pergudangan XIX No. 6<br>Kalibaru,
+                                                Pakuhaji<br>Tangerang, Banten 15570</div>
                                         </div>
                                     </li>
                                     <li class="tmp-scroll-trigger tmp-fade-in animation-order-3 tmp-link-animation">
                                         <span class="ft-icon"><i class="fa-solid fa-location-dot"></i></span>
                                         <div class="ft-link-wrap">
                                             <h4 class="link-title">Contact:</h4>
-                                            <a href="#">01245789321</a>
+                                            <a href="#">(+62) 813-1221-045</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -744,7 +796,7 @@
                             <div class="contact-inner">
                                 <div
                                     class="section-head section-head-one-side text-align-left tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <span class="title">GET IN TOUCH</span>
+                                    <span class="title">HUBUNGI KAMI</span>
                                 </div>
                                 <div class="contact-form">
                                     <div id="form-messages" class="error"></div>
@@ -776,7 +828,7 @@
                                                     <button class="tmp-btn hover-icon-reverse radius-round w-100"
                                                         name="submit" type="submit" id="submit">
                                                         <span class="icon-reverse-wrapper">
-                                                            <span class="btn-text">Appointment Now</span>
+                                                            <span class="btn-text">Kirim Pesan</span>
                                                             <span class="btn-icon"><i
                                                                     class="fa-sharp fa-regular fa-arrow-right"></i></span>
                                                             <span class="btn-icon"><i
@@ -793,6 +845,10 @@
                             </div>
                         </div>
                     </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.345244598616!2d106.83273037510429!3d-6.218121760903231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f40831e56edf%3A0x3baf62dc4159d8b1!2sEpiwalk!5e0!3m2!1sen!2sid!4v1758451760224!5m2!1sen!2sid"
+                        width="600" height="450" class="map" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
