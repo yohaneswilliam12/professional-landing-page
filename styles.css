@@ -63,7 +63,7 @@ body {
 
 .company-logo {
     width: 60px;
-    margin: 0 20px;
+    margin: 0 10px;
     object-fit: contain;
     opacity: 0;
 }
@@ -300,6 +300,12 @@ body {
     text-align: justify;
 }
 
+.swipe-see-more {
+    text-align: end;
+    padding: 20px;
+    user-select: none;
+}
+
 @media only screen and (min-width: 1200px) {
     .our-supported-company-area>.container>.row>div>div>img {
         padding: 50px;
@@ -319,7 +325,10 @@ body {
 /* mobile screen */
 @media only screen and (max-width: 800px) {
     .company-logo {
-        display: none;
+        opacity: 0;
+        width: 22.7px;
+        padding: 0;
+        margin: 0;
     }
 
     .header {

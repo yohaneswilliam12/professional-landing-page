@@ -169,20 +169,6 @@
     <script src="assets/js/plugins/text-type.js"></script>
     <!-- custom Js -->
     <script src="assets/js/main.js"></script>
-
-    <script>
-        var form = document.getElementById("contact-us-form");
-
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const name = formData.get("name");
-            const subject = formData.get("subject");
-            const message = formData.get("message");
-            window.location.href = `https://wa.me/628131221045?text=Hi%2C%20nama%20saya%20${name}%21%0ASaya%20ingin%20bertanya%20mengenai%20${subject}%2C%0A${message}`
-        })
-
-    </script>
 </body>
 
 </html>
