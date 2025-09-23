@@ -63,8 +63,14 @@ body {
 
 .company-logo {
     width: 60px;
-    margin: 0 40px;
     object-fit: contain;
+}
+
+.mh-40 {
+    margin: 0 40px;
+}
+
+.opacity-0 {
     opacity: 0;
 }
 
@@ -82,12 +88,22 @@ body {
     font-weight: bold;
     font-family: var(--font-secondary);
     color: white;
-    margin: 0 0 0 60px;
+}
+
+.company-footer-name {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    color: white;
+}
+
+.ml-60 {
+    margin-left: 60px;
 }
 
 .content {
     background-color: rgb(2, 9, 24);
-    min-height: 85vh;
+    min-height: 65vh;
 }
 
 .pb-10 {
@@ -329,10 +345,13 @@ body {
 /* mobile screen */
 @media only screen and (max-width: 800px) {
     .company-logo {
-        opacity: 0;
         width: 22.7px;
         padding: 0;
         margin: 0;
+    }
+
+    .ml-60 {
+        margin-left: 0;
     }
 
     .header {
