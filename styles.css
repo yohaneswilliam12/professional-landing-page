@@ -63,10 +63,11 @@ body {
 
 .company-logo {
     width: 60px;
-    margin: 0 10px;
+    margin: 0 40px;
     object-fit: contain;
     opacity: 0;
 }
+
 .company-logo-menu {
     width: 60px;
     object-fit: contain;
@@ -75,11 +76,13 @@ body {
 .logo-area {
     display: flex;
 }
+
 .company-name {
     font-size: 28px;
     font-weight: bold;
     font-family: var(--font-secondary);
     color: white;
+    margin: 0 0 0 60px;
 }
 
 .content {
@@ -319,6 +322,7 @@ body {
 
     .company-name {
         flex: 1;
+        text-align: center;
     }
 }
 
