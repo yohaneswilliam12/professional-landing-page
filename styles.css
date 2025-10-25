@@ -89,6 +89,9 @@ body {
     font-family: var(--font-secondary);
     color: white;
 }
+.company-name>img {
+    height: 32px;
+}
 
 .company-footer-name {
     font-size: 28px;
@@ -336,6 +339,10 @@ body {
 
 .h-\[500px\] {
     height: 500px !important;
+}
+
+.bg-fixed {
+    background-position: fixed;
 }
 
 @media only screen and (min-width: 1200px) {
