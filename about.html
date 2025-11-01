@@ -62,7 +62,8 @@
                     <div class="logo">
                         <a href="index.html" class="logo-area">
                             <img class="company-logo-menu" src="./custom/logo.png" alt="logo">
-                            <div class="company-name"><img src="custom/weblogo.svg" alt="OASIS LOGO" draggable="false"></div>
+                            <div class="company-name"><img src="custom/weblogo.svg" alt="OASIS LOGO" draggable="false">
+                            </div>
                         </a>
                     </div>
                     <div class="close-menu">
@@ -91,9 +92,9 @@
                         <div class="col-lg-6">
                             <div class="about-us-left-content-wrap bg-vactor-one">
                                 <div class="years-of-experience-card tmp-scroll-trigger tmp-fade-in animation-order-1">
-                                    <h2 class="counter card-title"><span class="odometer" data-count="50">00</span>+
+                                    <h2 class="counter card-title"><span class="odometer" data-count="100">00</span>+
                                     </h2>
-                                    <p class="card-para">Pelanggan Percaya</p>
+                                    <p class="card-para">Certified Suppliers</p>
                                 </div>
                                 <div class="design-card tmp-scroll-trigger tmp-fade-in animation-order-2">
                                     <div class="design-card-img">
@@ -115,7 +116,8 @@
                                     <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                                         Optima Apex Supply International Sourcing</h2>
                                     <p class="description tmp-scroll-trigger tmp-fade-in animation-order-3">Perusahaan
-                                        jaringan bisnis yang bergerak dalam perdagangan dan jasa, dengan memaksimalkan
+                                        jaringan bisnis yang bergerak dalam pengadaan barang dan jasa, dengan
+                                        memaksimalkan
                                         efisiensi dan solusi yang terbaik untuk usaha, bisnis, dan lembaga.
                                     </p>
                                 </div>
@@ -128,11 +130,10 @@
                                                 <div class="logo-img">
                                                     <img src="assets/images/about/logo-1.svg" alt="logo">
                                                 </div>
-                                                <h3 class="card-title">Visi</h3>
+                                                <h3 class="card-title">Authorized Suppliers</h3>
                                             </div>
-                                            <p class="card-para">Penyedia ratusan jenis kategori produk untuk segala
-                                                unit
-                                                lembaga dan usaha bisnis
+                                            <p class="card-para">Penyedia barang berbagai kategori yang berstandar
+                                                sesuai TKDN/Sertifikasi Lembaga dan Institusi
                                             </p>
                                         </div>
                                     </div>
@@ -144,9 +145,10 @@
                                                 <div class="logo-img">
                                                     <img src="assets/images/about/logo-2.svg" alt="logo">
                                                 </div>
-                                                <h3 class="card-title">Misi</h3>
+                                                <h3 class="card-title">Various Institutions</h3>
                                             </div>
-                                            <p class="card-para">Produk tersedia dengan kualitas dan pelayanan prima
+                                            <p class="card-para">Penyedia terpercaya berbagai Institusi dan Lembaga
+                                                dengan diferensiasi produk
                                             </p>
                                         </div>
                                     </div>
@@ -173,7 +175,6 @@
             <h2 class="custom-title mb-32 tmp-scroll-trigger tmp-fade-in animation-order-1">Company Profile<span><img
                         src="assets/images/custom-line/custom-line.png" alt="custom-line"></span></h2>
             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <p class="ex-subtitle">2025</p>
                 <h2 class="ex-name">Latar Belakang</h2>
                 <h3 class="ex-title">Founders</h3>
                 <p class="ex-para">PT OPTIMA APEX SUPPLY INTERNATIONAL SOURCING memahami tingginya kebutuhan berbagai
@@ -195,6 +196,15 @@
                     pelanggan inilah yang menjadi motivasi utama kami untuk terus berkembang dan memberikan kontribusi
                     terbaik.</p>
             </div>
+            <div class="about-btn mt--40 tmp-scroll-trigger tmp-fade-in animation-order-3">
+                <button id="downloadCompanyProfile" class="tmp-btn hover-icon-reverse radius-round w-auto">
+                    <span class="icon-reverse-wrapper">
+                        <label class="btn-text">Download Company Profile</label>
+                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                        <span class="btn-icon"><i class="fa-sharp fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -208,7 +218,8 @@
                                 <a class="flex align-items-center" href="index.html">
                                     <img class="company-logo" src="custom/logo.png" alt="Oasis">
 
-                                <div class="company-name"><img src="custom/weblogo.svg" alt="OASIS LOGO" draggable="false"></div>
+                                    <div class="company-name"><img src="custom/weblogo.svg" alt="OASIS LOGO"
+                                            draggable="false"></div>
                                 </a>
                             </div>
                             <p class="description">Mitra <span>Terpercaya</span> dan <span>Terdepan</span></p>
@@ -257,7 +268,7 @@
                     <div class="main-wrapper">
                         <p class="copy-right-para tmp-link-animation"> © <a target="_blank">PT OPTIMA APEX SUPPLY
                                 INTERNATIONAL SOURCING</a>
-                            2025 | All Rights Reserved
+                            | All Rights Reserved
                         </p>
                         <ul class="tmp-link-animation">
                             <li><a href="#">Terms & Condition</a></li>
@@ -343,6 +354,19 @@
     <script src="assets/js/plugins/text-type.js"></script>
     <!-- custom Js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.getElementById('downloadCompanyProfile').addEventListener('click', async () => {
+            const response = await fetch('custom/OASIS Company Profile 2025.pdf');
+            const blob = await response.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'OASIS Company Profile 2025.pdf';
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+    </script>
 </body>
 
 </html>
